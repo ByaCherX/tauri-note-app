@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0f0f1e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.loading-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.loading-content h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.loading-text {
+  color: #6a62d2;
+  font-size: 1.2rem;
+}

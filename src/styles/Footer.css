@@ -1,0 +1,75 @@
+.app-footer {
+  height: 24px;
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  font-size: 12px;
+  color: var(--text-light);
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.clock {
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background-color: rgba(var(--primary-rgb), 0.1);
+  color: var(--text);
+  margin-right: 10px;
+  border: 1px solid rgba(var(--primary-rgb), 0.2);
+  animation: clockPulse 1s infinite alternate;
+}
+
+@keyframes clockPulse {
+  from { opacity: 0.85; }
+  to { opacity: 1; }
+}
+
+.footer-right {
+  display: flex;
+  height: 100%;
+  margin-left: auto; /* Sağa yanaştır */
+  position: relative;
+  padding-right: 0px;
+}
+
+.status-box {
+  color: white;
+  padding: 0px 16px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 0px 0px 8px;
+}
+
+.status-box.ready {
+  background-color: #4CAF50;
+}
+.status-box.preparing {
+  background-color: #FF9800;
+}
+
+/* Dark mode specific styles */
+@media (prefers-color-scheme: dark) {
+  .app-footer {
+    background-color: var(--background-secondary);
+    border-color: var(--border);
+  }
+  
+  .clock {
+    background-color: rgba(var(--primary-rgb), 0.15);
+    border-color: rgba(var(--primary-rgb), 0.3);
+  }
+}
