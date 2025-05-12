@@ -182,7 +182,7 @@ const Header = ({ toggleSidebar, isEditing, activeNote, onSave, modified }: Head
         <button className="menu-toggle" onClick={toggleSidebar}>
           <i className="bi bi-layout-sidebar-inset"></i>
         </button>
-        <h1>Not Defteri</h1>
+        <h1 style={{ color: "white", textShadow: "0px 0px 1px black" }}>Not Defteri</h1>
         {modified && <span className="modified-indicator"><i className="bi bi-journal-text" style={{ fontSize: '24px' }}></i></span>}
       </div>
       

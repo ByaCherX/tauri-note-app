@@ -90,12 +90,7 @@
   margin: 0;
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--text);
-  background: linear-gradient(120deg, var(--primary), var(--accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: rgb(255, 255, 255);
 }
 
 .menu-bar {

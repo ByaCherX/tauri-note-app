@@ -3,6 +3,12 @@
   animation: fadeIn 0.4s ease-out;
 }
 
+.note-list-container h2 {
+  color: var(--text);
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
 .note-list-header {
   display: flex;
   justify-content: space-between;
@@ -12,7 +18,7 @@
 }
 
 .note-list-header h2 {
-  color: var(--text);
+  color: rgb(255, 255, 255);
   font-size: 1.8rem;
   margin: 0;
   position: relative;
@@ -81,7 +87,7 @@
   background: linear-gradient(120deg, #fff9c4 0%, #fff7a8 100%);
   border: 1px solid #e6d74c;
   border-radius: 8px;
-  padding: 20px;
+  padding: 0px 20px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
   position: relative;
   cursor: pointer;
